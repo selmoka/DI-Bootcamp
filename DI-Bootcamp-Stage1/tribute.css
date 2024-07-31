@@ -1,5 +1,6 @@
 body {
 	background-color: lightyellow;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 section {
@@ -58,12 +59,19 @@ section {
 	margin: 2px;
 	border-color: blue;
 	border-radius: 5px;
-	border: 1px solid blue;
 	margin: 10px;
 	padding: 15px;
 	background-color: #FFE4B5;
 	align-content: center;
 	text-align: justify;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+	transition: transform 0.2s, box-shadow 0.2s;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-awards:hover {
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
 }
 
 .img-biography {

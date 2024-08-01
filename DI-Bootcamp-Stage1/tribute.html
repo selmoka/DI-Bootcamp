@@ -8,19 +8,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <header>
         <!--Beginning of the visual content of the document -->
 		<!-- here the navigation bar -->
-		<header>
-			<nav class="navigation">
-				<a href="#home" class="links">Home</a>
-				<a href="#biography" class="links">Biography</a>
-				<a href="#awards" class="links">Awards</a>
-			</nav>
-		</header>
+			<nav class="nav-extended">
+				<div class="nav-wrapper">
+				  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      				<ul class="right hide-on-med-and-down">
+						<li><a href="#home" class="links">Home</a></li>
+						<li><a href="#biography" class="links">Biography</a></li>
+						<li><a href="#awards" class="links">Awards</a></li>
+					</ul>
+				</div>
+		  	</nav>
+
+			<ul class="sidenav" id="mobile-demo">
+				<li><a href="#home" class="links">Home</a></li>
+				<li><a href="#biography" class="links">Biography</a></li>
+				<li><a href="#awards" class="links">Awards</a></li>
+			</ul>
     </header>
     <main id="home">
 			<!-- Hero image -->
@@ -28,6 +39,7 @@
 				<div class="text">
 					<h1 class="title">Albert Einstein</h1>
 					<p class="ubuntu-light">Albert Einstein  (14 March 1879 – 18 April 1955) was a German-born theoretical physicist who is widely held as one of the most influential scientists. </p>
+				</div>
 			</section>
 			<!-- Biography information -->
 			<section id="biography">
@@ -105,11 +117,15 @@
 					</div>
 				</div>
 			</section>
-
-
-    <article></article>
-    <footer>
-
-    </footer>
+	</main>
 </body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.sidenav').sidenav();
+	});
+</script>
+
 </html>

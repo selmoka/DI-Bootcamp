@@ -35,27 +35,20 @@ section {
 
 .tribute-info {
 	display: flex;
-	align-items:  flex-start;
+	align-items: flex-start;
 	gap: 20px; /* Space between image and text */
-}
-
-@media (max-width: 768px) {
-	.tribute-info {
-		flex-direction: column;
-		align-items: center;
-	}
 }
 
 .div-awards {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: flex-start;
-	justify-content: space-around;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .card-awards {
-	width: 25vw;
-	height: 30vh;
+	width: 27vw;
+	height: 35vh;
 	margin: 2px;
 	border-color: blue;
 	border-radius: 5px;
@@ -75,8 +68,7 @@ section {
 }
 
 .img-biography {
-	max-width: 300px; /* Adjust the size of the image as needed */
-	height: auto;
+	max-width: 20vw;
 }
 
 .text-biography {
@@ -84,3 +76,14 @@ section {
 	text-indent: 2em;
 }
 
+@media (max-width: 768px) {
+	.tribute-info {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.card-awards {
+		width: 33vw;
+		height: 60vh;
+	}
+}

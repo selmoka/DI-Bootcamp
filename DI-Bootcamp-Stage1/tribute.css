@@ -1,10 +1,9 @@
 body {
-	background-color: lightyellow;
+	background-color: lightgoldenrodyellow;
     font-family: 'Ubuntu', sans-serif;
 }
 
 section {
-	background-color: lightgoldenrodyellow;
 	margin: 5px 5px;
 	padding: 20px 30px;
 }
@@ -81,6 +80,25 @@ section {
 
 .card-awards:hover {
 	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+footer {
+	background-color: lightgoldenrodyellow;
+}
+
+.footer-text {
+	display: flex;
+	justify-content: center;
+	margin: 4vw 6vw;
+	padding: 0.2vw;
+	border: 1px solid #ccc;
+	background-color: #ee6e73;
+	color: white;
+	border-radius: 5px;
+}
+
+.footer-text p {
+	margin-left: 2vw;
 }
 
 @media (max-width: 768px) {
